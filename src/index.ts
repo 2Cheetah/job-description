@@ -16,7 +16,6 @@ app.use('/message', basicAuth({
 
 app.get("/message", async (c) => {
   const llm_token = c.env.LLM_TOKEN
-  console.log(llm_token)
   return c.text('Hello, user!')
 });
 
