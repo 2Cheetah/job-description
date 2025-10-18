@@ -25,7 +25,7 @@ jobs:
           secrets: |
             LLM_TOKEN
         env:
-          LLM_TOKEN: ${{ secrets.LLM_TOKEN }}
+          LLM_TOKEN: ${{ secrets.LLM_TOKEN_STAGING }}
           
       - name: Print staging URL
         env:
