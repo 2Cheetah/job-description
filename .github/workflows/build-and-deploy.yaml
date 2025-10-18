@@ -9,6 +9,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - name: Install Wrangler
+        run: npm install -g wrangler@4.43.0
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
