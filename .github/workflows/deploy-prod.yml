@@ -22,5 +22,5 @@ jobs:
           secrets: |
             LLM_TOKEN_PROD
         env:
-          LLM_TOKEN: ${{ secrets.LLM_TOKEN_PROD }}
+          LLM_TOKEN_PROD: ${{ secrets.LLM_TOKEN_PROD }}
 
