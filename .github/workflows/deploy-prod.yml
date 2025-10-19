@@ -24,8 +24,12 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           secrets: |
             LLM_TOKEN
+            USERNAME
+            PASSWORD
         env:
           LLM_TOKEN: ${{ secrets.LLM_TOKEN_PROD }}
+          USERNAME: ${{ secrets.USERNAME_PROD }}
+          PASSWORD: ${{ secrets.PASSWORD_PROD }}
 
       - name: Print staging URL
         env:
