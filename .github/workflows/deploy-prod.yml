@@ -6,6 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -27,9 +28,9 @@ jobs:
             USERNAME
             PASSWORD
         env:
-          LLM_TOKEN: ${{ secrets.LLM_TOKEN_PROD }}
-          USERNAME: ${{ secrets.USERNAME_PROD }}
-          PASSWORD: ${{ secrets.PASSWORD_PROD }}
+          LLM_TOKEN: ${{ secrets.LLM_TOKEN }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Print staging URL
         env:
