@@ -27,9 +27,9 @@ jobs:
             USERNAME
             PASSWORD
         env:
-          LLM_TOKEN: ${{ secrets.LLM_TOKEN_STAGING }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          LLM_TOKEN: ${{ secrets.LLM_TOKEN_PROD }}
+          USERNAME: ${{ secrets.USERNAME_PROD }}
+          PASSWORD: ${{ secrets.PASSWORD_PROD }}
 
       - name: Print staging URL
         env:

@@ -28,8 +28,8 @@ jobs:
             PASSWORD
         env:
           LLM_TOKEN: ${{ secrets.LLM_TOKEN_STAGING }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME: ${{ secrets.USERNAME_STAGING }}
+          PASSWORD: ${{ secrets.PASSWORD_STAGING }}
           
       - name: Print staging URL
         env:
